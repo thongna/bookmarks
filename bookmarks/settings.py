@@ -25,7 +25,7 @@ SECRET_KEY = 'h$(7c1*thkh4=@rcbxq2&%jn))44foe=5xl&=a67$0=w-r3kj0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'django_extensions',
+    'images.apps.ImagesConfig',
+    'sorl.thumbnail',
 
 ]
 

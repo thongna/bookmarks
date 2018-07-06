@@ -35,5 +35,11 @@ urlpatterns = [
     path('register/', views.register, name='register'),
 
     # Edit User Profile
-    path('edit/', views.edit, name='edit')
+    path('edit/', views.edit, name='edit'),
+
+    # User Detail & User List
+    path('users/follow/', views.user_follow, name='user_follow'),
+    path('users/', views.user_list, name='user_list'),
+    path('users/<username>/', views.user_detail, name='user_detail'),
+
 ]

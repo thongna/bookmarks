@@ -170,3 +170,8 @@ ABSOLUTE_URL_OVERRIDES = {
 }
 
 THUMBNAIL_DEBUG = True
+
+# Redis config
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
